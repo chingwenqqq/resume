@@ -1,0 +1,176 @@
+* {
+/*   border: solid 1px black; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #ddd;
+  font-size: 14px;
+  line-height: 20px;
+  color: #3b4144;
+}
+/* 複寫區 */
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #3b4144;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+h2 {
+  color: #fff;
+  font-size: 35px;
+}
+h3 {
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+h4 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+h5 {
+  font-size: 13px;
+  line-height: 25px;
+}
+p {
+  font-size: 13px;
+  line-height: 23px;
+}
+.resume {
+  max-width: 800px;
+  min-width: 700px;
+  border: solid #fff 3px;
+  padding: 25px;
+}
+.top,.left,.right,.footer {
+  padding: 15px;
+}
+.content {
+  display: flex;
+}
+.left {
+  flex: 5;
+  padding-right: 30px;
+}
+.right {
+  flex: 7;
+  padding-left: 40px;
+  border-left: 1px solid #fff;
+}
+.top {
+  display: flex;
+  position:relative;
+  margin-bottom: 20px;
+}
+.footer {
+  margin-top: 30px;
+}
+.myPhoto,.nameCircle {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.nameCircle {
+  position: absolute;
+  left: 45px;
+  z-index: -1;
+  background: linear-gradient(135deg, #ffb2e4, #82d5ff);
+}
+.myName {
+  padding: 40px;
+}
+.circle {
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border: 1px solid;
+}
+.buttons {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.btn {
+  padding: 5px 20px;
+  background-color: #fff;
+  margin-right: 10px;
+}
+.btn:hover {
+  background-color: pink;
+}
+.listPassion {
+  display: flex;
+  flex-wrap: wrap;
+}
+.listPassion > li {
+  width: 50%;
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
+}
+.listSkill {
+  margin-bottom: 30px;
+}
+.listSkill > ul{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.skillLevel {
+  width: 0px;
+  height: 0px;
+  border: 35px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  margin-left: 10px;
+}
+.littleCircle {
+  position: absolute;
+  background-color: #ddd;
+  width: 59px;
+  height: 59px;
+  border-radius: 50%;
+  left: -29px;
+  top: -29px;
+  padding-top: 17px;
+  }
+.level1 {
+  border-left: 35px solid #fff;
+  border-top: 35px solid #fff;
+  border-right: 35px solid transparent;
+  border-bottom: 35px solid #fff;
+}
+.listExperience {
+  display: flex;
+  padding-left: 30px;
+}
+.listExperience > li {
+  padding-left: 30px;
+  flex: 3;
+}
+.listExperience li ul {
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-left: 15px;
+  border-left: 3px solid #fff;
+/*   background-color: pink; */
+}
+.listExperience > li > ul > li {
+/*   background-color: #fff; */
+  margin-top: 13px;
+} 
