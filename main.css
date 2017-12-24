@@ -38,10 +38,12 @@ h4 {
   font-size: 18px;
   margin-bottom: 20px;
 }
-h4:after {
+/*h4::after {
+  content: ;
   width: 10px;
   height: 10px;
-}
+  background-color: white;
+}*/
 h5 {
   font-size: 13px;
   line-height: 25px;
@@ -55,6 +57,7 @@ p {
   min-width: 700px;
   border: solid #fff 3px;
   padding: 25px;
+  overflow: hidden;
 }
 .top,.left,.right,.footer {
   padding: 15px;
@@ -144,26 +147,49 @@ p {
   position: relative;
   margin-left: 15px;
   padding-top: 13px;
+  z-index: -2;
 }
-/*.littleCircle {
+.level1,.level2 {
   position: absolute;
   background-color: #ddd;
-  width: 59px;
-  height: 59px;
-  border-radius: 50%;
-  left: -29px;
-  top: -29px;
-  padding-top: 17px;
-  }*/
-/*.level1 {
-  border-left: 35px solid #fff;
-  border-top: 35px solid #fff;
-  border-right: 35px solid transparent;
-  border-bottom: 35px solid #fff;
-}*/
+  z-index: -1;
+}
+.level1 {
+  width: 35px;
+  height: 30px;
+  left: -3px;
+  top: 22px;
+}
+.level2 {
+  width: 65px;
+  left: -3px;
+  top: -3px;
+  height: 30px;
+}
 .listAward > li {
   margin-top: 10px;
   padding-left: 10px;
+}
+.footer {
+  position: relative;
+}
+.footerCircle {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+.circle1 {
+  background-color: white; 
+  left: -300px;
+  width: 350px;
+  height: 350px;
+}
+.circle2 {
+  background-color: #ddd;
+  left: -290px;
+  top: 25px;
+  width: 330px;
+  height: 330px;
 }
 .listExperience {
   display: flex;
