@@ -38,6 +38,10 @@ h4 {
   font-size: 18px;
   margin-bottom: 20px;
 }
+h4:after {
+  width: 10px;
+  height: 10px;
+}
 h5 {
   font-size: 13px;
   line-height: 25px;
@@ -47,7 +51,7 @@ p {
   line-height: 23px;
 }
 .resume {
-  max-width: 800px;
+  max-width: 850px;
   min-width: 700px;
   border: solid #fff 3px;
   padding: 25px;
@@ -61,6 +65,7 @@ p {
 .left {
   flex: 5;
   padding-right: 30px;
+  padding-left: 30px;
 }
 .right {
   flex: 7;
@@ -74,6 +79,7 @@ p {
 }
 .footer {
   margin-top: 30px;
+  padding-left: 40px;
 }
 .myPhoto,.nameCircle {
   width: 120px;
@@ -101,7 +107,7 @@ p {
 }
 .buttons {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .btn {
   padding: 5px 20px;
@@ -122,7 +128,7 @@ p {
   text-align: center;
 }
 .listSkill {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .listSkill > ul{
   display: flex;
@@ -130,15 +136,16 @@ p {
   margin-bottom: 10px;
 }
 .skillLevel {
-  width: 0px;
-  height: 0px;
-  border: 35px solid #fff;
-  border-radius: 50%;
+  width: 65px;
+  height: 55px;
+  border: 3px solid #fff;
+/*  border-radius: 50%;*/  
   text-align: center;
   position: relative;
-  margin-left: 10px;
+  margin-left: 15px;
+  padding-top: 13px;
 }
-.littleCircle {
+/*.littleCircle {
   position: absolute;
   background-color: #ddd;
   width: 59px;
@@ -147,12 +154,16 @@ p {
   left: -29px;
   top: -29px;
   padding-top: 17px;
-  }
-.level1 {
+  }*/
+/*.level1 {
   border-left: 35px solid #fff;
   border-top: 35px solid #fff;
   border-right: 35px solid transparent;
   border-bottom: 35px solid #fff;
+}*/
+.listAward > li {
+  margin-top: 10px;
+  padding-left: 10px;
 }
 .listExperience {
   display: flex;
