@@ -25,9 +25,12 @@ a {
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
+h1 {
+  line-height: 60px;
+}
 h2 {
   color: #fff;
-  font-size: 35px;
+  font-size: 25px;
 }
 h3 {
   font-size: 16px;
@@ -58,9 +61,27 @@ p {
 .resume {
   max-width: 850px;
   min-width: 700px;
-  border: solid #fff 3px;
+  border: solid #fff 5px;
   padding: 25px;
   overflow: hidden;
+}
+.decoration {
+  width: 300px;
+  height: 100px;
+  background: linear-gradient(135deg, #ffb2e4, #89d3e3);
+  border-radius: 70px;
+  position: absolute;
+  transform: rotate(-30deg);
+  /*border: 1px solid #3b4144;*/
+}
+.decoration:nth-of-type(1) {
+  top: -95px;
+  left: 74%;
+}
+.decoration:nth-of-type(2) {
+  top: 40px;
+  left: 71%;
+  width: 400px;
 }
 .top,.left,.right,.footer {
   padding: 15px;
@@ -74,9 +95,9 @@ p {
   padding-left: 30px;
 }
 .right {
-  flex: 7;
+  flex: 8;
   padding-left: 40px;
-  border-left: 1px solid #fff;
+  border-left: 1px solid #3b4144;
 }
 .top {
   display: flex;
@@ -87,20 +108,26 @@ p {
   margin-top: 30px;
   padding-left: 40px;
 }
-.myPhoto,.nameCircle {
+.myPhoto {
   width: 120px;
   height: 120px;
   background-color: #fff;
   border-radius: 50%;
+  margin-left: 10px;
+  background-image: url("image/myphoto.png");
+  background-size: 120px 120px;
+  background-position: center;
+  border: 1px solid #3b4144;
 }
-.nameCircle {
+/*.nameCircle {
   position: absolute;
   left: 45px;
   z-index: -1;
   background: linear-gradient(135deg, #ffb2e4, #82d5ff);
-}
+}*/
 .myName {
-  padding: 40px;
+  padding-left: 40px;
+  padding-top: 10px;
 }
 .circle {
   width: 90px;
@@ -109,8 +136,23 @@ p {
   border-radius: 50%;
   margin: 0 auto;
   margin-bottom: 10px;
-  border: 1px solid;
+  border: 1px solid #3b4144;
+  background-size: 90px 90px;
+  background-position: center;
 }
+.circle-image1 {
+  background-image: url("image/passion_feminism.png")
+}
+.circle-image2 {
+  background-image: url("image/passion_pottery.png")
+}
+.circle-image3 {
+  background-image: url("image/passion_art.png")
+}
+.circle-image4 {
+  background-image: url("image/passion_comic.png")
+}
+
 .buttons {
   margin-top: 20px;
   margin-bottom: 40px;
@@ -119,9 +161,12 @@ p {
   padding: 5px 20px;
   background-color: #fff;
   margin-right: 10px;
+  border: 1px solid #3b4144;
 }
 .btn:hover {
-  background-color: pink;
+  background: linear-gradient(135deg, #ffb2e4, #82d5ff);
+  border: 1px solid #ddd;
+  color: #fff;
 }
 .listPassion {
   display: flex;
@@ -130,6 +175,7 @@ p {
 .listPassion > li {
   width: 50%;
   margin-top: 10px;
+  margin-bottom: 10px;
   justify-content: center;
   text-align: center;
 }
@@ -209,7 +255,7 @@ p {
 .decorationLine:nth-of-type(1) {
   width: 35%;
   top: -20px;
-  left: 30px;
+  left: 20px;
   background: linear-gradient(135deg, #ffb2e4, #82d5ff);
 } 
 .decorationCircle:nth-of-type(2) {
@@ -218,7 +264,7 @@ p {
 }
 .decorationLine:nth-of-type(3) {
   width: 50%;
-  left: 37%;
+  left: 36%;
   top: 0px;
   background: linear-gradient(135deg, #ffb2e4, #82d5ff);
 }
@@ -228,7 +274,7 @@ p {
 }
 .decorationLine:nth-of-type(5) {
   width: 25%;
-  left: 71%;
+  left: 69%;
   top: 20px;
   background: linear-gradient(135deg, #ffb2e4, #82d5ff);
 } 
@@ -241,7 +287,7 @@ p {
   /*padding-left: 30px;*/
 }
 .listExperience > li {
-  padding-left: 30px;
+  padding-left: 20px;
   flex: 3;
 }
 .listExperience li ul {
