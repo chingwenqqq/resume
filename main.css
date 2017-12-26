@@ -1,12 +1,11 @@
 * {
-/*   border: solid 1px black; */
+/*  border: solid 1px black; */
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 body {
   padding: 50px;
-  display: flex;
   justify-content: center;
   background-color: #ddd;
   font-size: 14px;
@@ -29,7 +28,6 @@ h1 {
   line-height: 60px;
 }
 h2 {
-  color: #fff;
   font-size: 25px;
 }
 h3 {
@@ -59,6 +57,7 @@ p {
   line-height: 23px;
 }
 .resume {
+  margin: 0 auto;
   max-width: 850px;
   min-width: 700px;
   border: solid #fff 5px;
@@ -185,7 +184,7 @@ p {
 .listSkill > ul{
   display: flex;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 .skillLevel {
   width: 65px;
@@ -302,3 +301,61 @@ p {
 /*   background-color: #fff; */
   margin-top: 13px;
 } 
+
+@media only screen and (max-width: 700px) {
+.resume {
+  width: 100%;
+  min-width: 300px;
+  border: none;
+  overflow: visible;
+}
+/*.resume div {
+  border: 1px solid;
+}*/
+.content,.listExperience {
+  display: block;
+}
+.top,.footer {
+  display: inline-block;
+  width: 100%;  
+  margin: 0 auto;
+}
+h4 {
+  margin-top: 30px;
+}
+.myName {
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.listPassion > li {
+  width: 25%;
+}
+.right {
+  border: none;
+  padding-left: 30px;
+}
+.footer {
+  padding-left: 30px;
+}
+.time {
+  display: none;
+}
+.listExperience > li {
+    margin-bottom: 30px;
+  }
+@media only screen and (max-width: 600px) {
+body {
+  padding: 5px;
+}
+.listPassion > li {
+  width: 50%;
+}
+.skillLevel {
+  width: 60px;
+  margin-left: 0px;
+  margin-right: 15px;
+}
+.listAward > li {
+  padding-left: 0px;
+}
+}
