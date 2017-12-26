@@ -303,11 +303,14 @@ p {
 } 
 
 @media only screen and (max-width: 700px) {
+body {
+  padding: 0px;
+}
 .resume {
   width: 100%;
   min-width: 300px;
   border: none;
-  overflow: visible;
+  padding: 50px;
 }
 /*.resume div {
   border: 1px solid;
@@ -343,9 +346,9 @@ h4 {
 .listExperience > li {
     margin-bottom: 30px;
   }
-@media only screen and (max-width: 600px) {
-body {
-  padding: 5px;
+@media only screen and (max-width: 500px) {
+.resume {
+  padding: 10px;
 }
 .listPassion > li {
   width: 50%;
