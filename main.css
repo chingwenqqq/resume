@@ -29,13 +29,14 @@ h1 {
   line-height: 60px;
 }
 h2 {
-  font-size: 25px;
+  font-size: 22px;
   font-family: 'Open Sans', sans-serif;
 }
 h3 {
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 0.5px;
   margin-bottom: 10px;
+  color: #626669;
 }
 h4 {
   font-size: 18px;
@@ -48,10 +49,10 @@ h4 {
   width: 20px;
   height: 8px;
   background-color: #fff;
-  background: linear-gradient(135deg, #ffb2e4, #82d5ff);
+  background-color: #ffb2e4;
   margin-left: 10px;
-}
-*/h5 {
+}*/
+h5 {
   font-size: 13px;
   line-height: 25px;
 }
@@ -110,7 +111,7 @@ p {
   margin-top: 30px;
   padding-left: 40px;
 }
-.myPhoto {
+.myPhoto,.nameCircle {
   width: 120px;
   height: 120px;
   background-color: #fff;
@@ -119,14 +120,15 @@ p {
   background-image: url("image/myphoto.png");
   background-size: 120px 120px;
   background-position: center;
-  border: 3px solid #fff;
+  /*border: 3px solid #fff;*/
 }
-/*.nameCircle {
+.nameCircle {
   position: absolute;
-  left: 45px;
+  left: 35px;
   z-index: -1;
   background: linear-gradient(135deg, #ffb2e4, #82d5ff);
-}*/
+  border: none;
+}
 .myName {
   padding-left: 40px;
   padding-top: 10px;
@@ -191,6 +193,9 @@ p {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+.listSkill >li {
+  padding-left: 10px;
+}
 .skillLevel {
   width: 65px;
   height: 55px;
@@ -198,7 +203,7 @@ p {
 /*  border-radius: 50%;*/  
   text-align: center;
   position: relative;
-  margin-left: 15px;
+  margin-left: 10px;
   padding-top: 13px;
   z-index: -2;
 }
