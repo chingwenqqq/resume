@@ -119,7 +119,7 @@ p {
   background-image: url("image/myphoto.png");
   background-size: 120px 120px;
   background-position: center;
-  /*border: 1px solid #3b4144;*/
+  border: 3px solid #fff;
 }
 /*.nameCircle {
   position: absolute;
