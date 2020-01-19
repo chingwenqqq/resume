@@ -92,7 +92,7 @@ p {
   display: flex;
 }
 .left {
-  flex: 5;
+  flex: 7.5;
   padding-right: 30px;
   padding-left: 30px;
 }
